@@ -1,0 +1,59 @@
+
+{{>header}}
+
+{{>navbar}}
+  <div class="container mt-5">
+        <div class="row no-gutters">
+            <div class="col-md-4 info-container d-flex flex-column justify-content-center align-items-center">
+                <h1>Welcome</h1>
+                <p>to the complete MERN Backend course</p>
+                <button class="btn btn-light mt-3"  href="/login">Login</button>
+            </div>
+            <div class="col-md-8 form-container">
+                <form action="/register" method="POST" id="registrationForm">
+                    <h1>Employee Registration Form</h1>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <input type="text" name="firstname" class="form-control" id="firstName" placeholder="First Name *" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" name="lastname" class="form-control" id="lastName" placeholder="Last Name *" required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <input type="email" name="email" class="form-control" id="email" placeholder="Your Email *" required>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender" id="male" value="male" required>
+                                <label class="form-check-label" for="male">Male</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender" id="female" value="female" required>
+                                <label class="form-check-label" for="female">Female</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone *" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="number" name="age" class="form-control" id="age" placeholder="Enter Your Age *" required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <input type="password" name="password" class="form-control" id="password" placeholder="Password *" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="password" name="Confirmpassword" class="form-control" id="confirmPassword" placeholder="Confirm Password *" required>
+                        </div>
+                    </div>
+                    <button type="submit" href="/register" name="register" class="btn btn-primary w-100">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    {{>footer}}

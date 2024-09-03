@@ -1,0 +1,24 @@
+
+{{>header}}
+
+{{>navbar}}
+    <div class="login-container mt-5 bg-dark text-light">
+        <h3 class="text-center">User Login</h3>
+        <form action="/login" method="POST" >
+            <div class="mb-3">
+                <label for="email" class="form-label">Email or Phone</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" id="password" name="password" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100 btn-block">Login</button>
+            <label for="" class="checkbox pull-left mt-3">
+                <input type="checkbox" value="remember-me" name="" id=""> Remember-me
+            </label>
+            <a href="#" class="text-right need-help ms-5 ">Need help?</a> <span class="clearfix"></span>
+        </form>
+    <a href="/registation" class="text-center new-account ms-5">Create an account</a>
+    </div>
+{{>footer}}
